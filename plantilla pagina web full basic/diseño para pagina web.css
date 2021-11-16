@@ -1,0 +1,176 @@
+/* Comentario */
+/*se usa :root{} para crear variables la cual le podemos poner cualquier nombre colocandoleantes*/ 
+/*se usa var para usar  una variable la cual podemos usar como un metodo de configuracion de nuestro sitio.*/
+
+:root { 
+	/*CONFIGURACIONES DE COLOR*/
+	--fondoPrimario:#a500bf ;
+	--fondoLogotipo: #b858c7;
+	--sombraLogotipo: #650c74 ;
+	--bordeDeLogotipo: #6c0d7b;
+	--colorBarraDeMenu: #bf0092;
+	--colorDeLetrasDelMenu: #fff;
+	--colorDePreseleccionBarraDelMenu: #650c74;
+	--colorDeLetrasDePreseleccion: #3a0510;
+	--colorFondoDeArticulos: #771986;
+	--colorFondoDeSideBar: #ff0064;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: var(--fondoPrimario); /* color de fondo total de la pagina*/
+}
+
+header, .main, footer {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header div{
+	background: var(--fondoLogotipo); /* color de fondo del area de logotipo*/
+	border-radius:50px;
+
+	overflow:hidden;
+}
+header div img {
+	height:auto;
+	width:150px; /* tamaño del logotipo*/
+	margin:auto;
+	margin-left: 0px;
+	display:block;
+	border-radius:50%;
+	box-shadow:5px 5px 0px var(--sombraLogotipo);/* color de sombra del logotipo */
+	padding:3px;
+	border:1px var(--bordeDeLogotipo); /* color de borde del Logotipo */
+}
+
+header nav {
+	background: var(--colorBarraDeMenu) ;
+	border-radius:20px;
+	overflow:hidden;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	padding:10px 20px;
+	display:block;
+	color: #fff;
+	text-decoration:none;
+}
+
+header nav ul li a: hover {
+	background:#75ACEC;
+}
+
+.menu {
+	width:100%;
+	background:#CCC;
+	list-style:none;
+	margin:;
+	padding:0;
+}
+
+.menu li {
+	display:inline-block;
+}
+
+
+
+.menu li a {
+		padding:10px 20px;
+		display:inline-block;
+		color: var(--colorDeLetrasDelMenu);
+}
+
+.menu li a:hover {
+	background: var(--colorDePreseleccionBarraDelMenu); /*color de pre seleccion del manu*/
+	color: var(--colorDeLetrasDePreseleccion);
+	border-radius:20px;
+	
+}
+
+ .main .articles {
+	width:68.5%;
+	margin-right:1.5%;
+	float:left;
+
+}
+
+}
+
+.main .articles article {
+	padding:20px;
+	background: var(--colorFondoDeArticulos); /*color de fondo de articulos*/
+	margin-bottom: 20px;
+	border-radius:20px;
+}
+
+aside {
+	width:30%;
+	background: var(--colorFondoDeSideBar); /*color de fondo sidebar*/
+	float:left;
+	padding:20px;
+	box-sizing:border-box;
+	border-radius:20px
+}
+
+form label {
+	width:68.5%;
+	margin-left: 176px;
+	float:left;
+}
+
+form textarea {
+	resize:vertical;
+	max-height:300px;
+	min-height:100px;
+
+	margin-left: 176px; /*margen-izq.*/
+	margin-bottom:20px; /*margen der.*/
+	margin-top: 20px; /*margen superior*/
+	width:50.7%; /*ancho*/
+	padding:10px; /*relleno*/
+	-webkit-box-sizing: border-box; /**/
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	border:1px solid #1668C4;
+}
+
+input:focus, textarea:focus {
+	border:1px solid #1668C4;
+}
+
+input[type="submit"] {
+	margin-top:20px;
+	margin-left: -50px;
+
+	background:#6da337; /*cambiar color boton Enviar*/
+	border:none;
+	border-radius:20px
+}
+
+input[type="submit"]:hover {
+	background:#006418; /* cambiar color de preseleccion boton Enviar*/
+	cursor:pointer;
+}
+
+footer {
+	background:#000;
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:center;
+	border-radius:20px;
+}

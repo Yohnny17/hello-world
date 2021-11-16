@@ -1,0 +1,331 @@
+<!--Use HTML5 para requerir un campo-->
+<!--Puede solicitar campos de formulario específicos para que su usuario no pueda enviar su formulario hasta que los haya completado.
+
+Por ejemplo, si desea que un campo de entrada de texto sea obligatorio, puede agregar el atributo requireddentro de su inputelemento, así:<input type="text" required>-->
+
+<!--Crear un conjunto de botones de opción
+Puede usar botones de opción para las preguntas en las que desea que el usuario solo le dé una respuesta de entre múltiples opciones.
+
+Los botones de radio son un tipo de input.
+
+Cada uno de sus botones de opción se puede anidar dentro de su propio labelelemento. Al envolver un inputelemento dentro de un labelelemento, automáticamente asociará la entrada del botón de radio con el elemento de etiqueta que lo rodea.
+
+Todos los botones de opción relacionados deben tener el mismo nameatributo para crear un grupo de botones de opción. Al crear un grupo de radio, al seleccionar cualquier botón de radio se anulará automáticamente la selección de los otros botones dentro del mismo grupo, lo que garantiza que el usuario solo proporcione una respuesta.
+
+A continuación, se muestra un ejemplo de un botón de opción:
+
+<label> 
+  <input type="radio" name="indoor-outdoor">Indoor 
+</label>
+Se considera una buena práctica establecer un foratributo en el labelelemento, con un valor que coincida con el valor del idatributo del inputelemento. Esto permite que las tecnologías de asistencia creen una relación vinculada entre la etiqueta y el inputelemento relacionado . Por ejemplo:
+
+<input id="indoor" type="radio" name="indoor-outdoor">
+<label for="indoor">Indoor</label>
+También podemos anidar el inputelemento dentro de las labeletiquetas:
+
+<label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+</label>
+-->
+
+<!--Crear un conjunto de casillas de verificación
+Los formularios suelen utilizar casillas de verificación para las preguntas que pueden tener más de una respuesta.
+
+Las casillas de verificación son un tipo de input.
+
+Cada una de sus casillas de verificación se puede anidar dentro de su propio labelelemento. Al envolver un inputelemento dentro de un labelelemento, automáticamente asociará la entrada de la casilla de verificación con el elemento de etiqueta que lo rodea.
+
+Todas las entradas de casillas de verificación relacionadas deben tener el mismo nameatributo.
+
+Se considera una buena práctica definir explícitamente la relación entre una casilla de verificación inputy su correspondiente labelestableciendo el foratributo en el labelelemento para que coincida con el idatributo del inputelemento asociado .
+
+A continuación, se muestra un ejemplo de una casilla de verificación:
+
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+Ag-->
+
+<!--Marque los botones de opción y las casillas de verificación de forma predeterminada
+Puede establecer una casilla de verificación o un botón de opción para que se marque de forma predeterminada mediante el checkedatributo.
+
+Para hacer esto, simplemente agregue la palabra checkeddentro de un elemento de entrada. Por ejemplo:
+
+<input type="radio" name="test-name" checked>-->
+
+<!--
+Cambiar el color del texto
+Ahora cambiemos el color de parte de nuestro texto.
+
+Podemos hacer esto cambiando el stylede su h2elemento.
+
+La propiedad responsable del color del texto de un elemento es la colorpropiedad de estilo.
+
+Así es como establecería el h2color del texto de su elemento en azul:
+
+<h2 style="color: blue;">CatPhotoApp</h2>
+Tenga en cuenta que es una buena práctica terminar las styledeclaraciones en línea con un ;.
+
+
+-->
+
+
+<!--Utiliza selectores CSS para dar estilo a elementos
+
+En CSS tienes a tu disposición cientos de propiedades CSS que puedes usar para cambiar el aspecto de un elemento de tu página.
+
+Cuando escribiste <h2 style="color: red;">CatPhotoApp</h2>, estabas aplicando un estilo a ese elemento h2específico usando CSS en línea; CSS significa hojas de estilo en cascada.
+
+Inline CSS es una de las formas de especificar el estilo de un elemento, pero existe una mejor forma de aplicar estilos CSS.
+
+En la parte superior de tu código, crea un bloque stylecomo el que se ve a continuación:
+
+<style>
+</style>
+Dentro de ese bloque de estilo, puedes crear un selector CSS para todos los elementos h2. Por ejemplo, para que todos los elementos h2sean de color rojo puedes añadir una regla de estilo como la siguiente:
+
+<style>
+  h2 {
+    color: red;
+  }
+</style>
+Ten en cuenta que es importante tener tanto llaves de apertura como de cierre ( {y }) alrededor de la (s) regla (s) de estilo de cada elemento. También debes asegurarte de que tu definición de estilo para ese elemento esté dentro de las etiquetas de apertura y cierre de estilo. Por último, asegúrate de añadir un punto y coma (;) al final de cada una de las reglas de estilo de tu elemento.
+-->
+
+<!--
+Cambia el tamaño de fuente de un elemento
+El tamaño de la fuente es controlado por la propiedad CSS font-size, como se muestra a continuación:
+
+h1 {
+  font-size: 30px;
+}
+-->
+
+<!--
+Establece la familia de fuentes de un elemento
+Puedes utilizar la propiedad font-family (familia de fuente) para establecer qué fuente debe usar un elemento.
+
+Por ejemplo, si quieres establecer la fuente de tu elemento h2 a sans-serif, usarías el siguiente CSS:
+
+h2 {
+  font-family: sans-serif;
+}
+
+-->
+
+<!--
+Importa una fuente de Google Fonts
+Además de especificar fuentes comunes disponibles en la mayoría de los sistemas operativos, también podemos especificar fuentes web no estándar y personalizadas para usarlas en nuestro sitio web. En Internet hay muchos lugares donde podemos conseguir web fonts. Para este ejemplo nos centraremos en la biblioteca de Google Fonts.
+
+Google Fonts es una biblioteca gratuita de web fonts que puedes utilizar en tu código CSS, haciendo referencia a la URL de la fuente.
+
+Entonces, importemos y apliquemos una fuente de Google (ten en cuenta que si Google está bloqueado en tu país, tendrás que pasar por alto este desafío).
+
+Para importar una fuente de Google, puedes copiar la URL de la fuente desde la librería de Google Fonts y luego pegarla en tu código HTML. Para este desafío, importaremos la fuente Lobster. Para ello, copia el siguiente fragmento de código y pégalo en la parte superior de tu editor de código (antes de abrir el elemento style):
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+Ahora puedes usar la fuente Lobster en tu CSS usando Lobster como FAMILY_NAME como en el siguiente ejemplo:
+
+font-family: FAMILY_NAME, GENERIC_NAME;
+GENERIC_NAME es opcional, y es el modo de especificar una fuente de reserva o "fallback font" en caso de que la otra fuente especificada no esté disponible. Veremos esto en el siguiente desafío.
+
+Los nombres de familia de fuentes son sensibles a mayúsculas y minúsculas, y si incluyen espacios deben estar envueltos entre comillas. Por ejemplo, necesitas comillas para usar la fuente "Open Sans", pero no las necesitas para usar la fuente Lobster.-->
+
+<!--
+	Añade bordes alrededor de tus elementos
+Los bordes CSS tienen propiedades como style (estilo), color y width (ancho).
+
+Por ejemplo, si quisiéramos crear un borde rojo de 5 píxeles alrededor de un elemento HTML, podríamos usar la siguiente clase:
+
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+-->
+
+<!--
+Añade bordes alrededor de tus elementos
+Los bordes CSS tienen propiedades como style (estilo), color y width (ancho).
+
+Por ejemplo, si quisiéramos crear un borde rojo de 5 píxeles alrededor de un elemento HTML, podríamos usar la siguiente clase:
+
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+-->
+
+<!--Añade márgenes diferentes a cada lado de un elemento
+En ocasiones, querrás personalizar un elemento para que tenga un margin diferente en cada uno de sus lados.
+
+CSS te permite controlar por separado el margin de los cuatro lados individuales de un elemento por medio de las propiedades margin-top, margin-right, margin-bottom y margin-left.
+-->
+
+
+
+<!--Utiliza la etiqueta u para subrayar texto
+Para subrayar texto, puedes usar la etiqueta u. Esto se utiliza a menudo para indicar que una sección del texto es importante, o algo que hay que recordar. Con la etiqueta u, el navegador aplica el CSS de text-decoration: underline; al elemento.-->
+
+<!--Utiliza la propiedad de transformación CSS skewX para inclinar un elemento a lo largo del eje X
+La siguiente función de la propiedad transformes skewX(), que incluye el elemento seleccionado a lo largo de su eje X (horizontal).
+
+El siguiente código inclina el elemento de párrafo en -32 grados a lo largo del eje X.
+
+p {
+  transform: skewX(-32deg);
+}
+-->
+
+
+
+<!--la etiqueta <form> es utilizada para crear formularios-->
+<!--la etiqueta <label> es utilizada para asignarle el nombre de una casilla-->
+<!--atributos de <label>  for=""se usa para asignar la id=""-->
+<!--la etiqueta <input> es usada para crear una entrada-->
+<!--la etiqueta <b> se usa para hacer una negrita sobre el texto.-->		
+<!--atributos de <input>  type="" que es para fijar un tipo de entrada de escritura;
+						  placeholder="" que se usa para indicar que se le esta solicitando dentro de la casilla
+						  y que al ingresar texto, se borre la pregunta y solo quede la respuesta; 
+						  
+						  value="" servia anteriormente como placeholder pero la desventaja era que primero tocaba
+	                      borrar lo que se solicitaba y luego  escribir la respuesta;
+						  
+						  size="" se usa para darle el tamaño de la casilla, no se recomienda ya que con css se hace
+						  mejor;
+						  
+						  maxlength="" es usada para fijar la cantidad maxima de caracteres permitidos;
+						  
+						  name="" se usa para permitir al servidor que valor estamos piediendo;
+						  
+						  id="" se usa para crear el nombre o id;
+						  
+						  class="";
+						  
+						  email="" se usa para verificacion automatica si es un correo valido;
+						  
+						  checkbox="" se usa para crear cuadros de marcar o de escoger;
+						  
+						  radio="" se usa para crear circulos de marcar o de escoger 
+						  
+						  value="" se usa para asignarle un valor por nombre
+						  
+						  button="" se usa para crear un boton, pero no tiene asignada una funcion especifica--
+						  
+						  submit="" 
+						  
+						  -->
+<html lang="es">
+	
+	<head><meta charset="UTF-8">
+	
+		<title>formulario test
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo para formularios.css">
+	</head>
+	<body><form action="datos.txt"><label for="Nombre">Nombres y Apellidos:
+					   </label>	
+
+					   <input type="text" placeholder="Escribe Tu Nombre Completo"  size="30" name="Nombre" id="Nombre" >
+					   </input>
+		<br/>
+		<br/>
+					   <label
+					   for="Contraseña">
+					   Contraseña
+					   </label>
+			
+					   <input type="password" placeholder="Ingrese contraseña"  size="15" name="Contraseña" id="Contraseña" maxlength="30" >
+					   </input>
+		<br/>
+		<br/>
+					   <label for="Correo">
+					   Correo Electronico
+					   </label>
+			
+					   <input type="email" placeholder="Ingrese correo" size="40" name="Correo" id="Correo">
+					   </input>
+		<br/>
+		<br/>
+					   <label for="Mensaje">Mensaje
+					   </label>
+					   <textarea id="Mensaje" placeholder="Escribe Tu Mensaje">
+					   </textarea>
+					   
+
+
+					   <input type="checkbox" name="" id="">
+					   Hombre
+					   </input>
+			
+					   <input
+					   type="checkbox" name="" id="">
+					   Mujer
+					   </input>
+		<br/>
+		<br/>
+			<input
+				type="radio" name="" id="">
+					Hombre
+			</input>
+			
+			<input
+				type="radio" name="" id="">
+					Mujer
+			</input>
+		<br/>
+		<br/>
+			<input
+				type="button" value="enviar">
+			</input>
+		<br/>	
+		<br/>
+			<input
+				type="submit" value=" Enviar">
+			</input>
+		<br/>
+		<br/>
+			<select
+				name="" id="">
+					<option
+						value="Elige Una Opción">
+							Elige
+					</option>
+					
+					<option 
+						value="Colombia">
+							colombia
+					</option>
+					
+					<option
+						value="España">
+							España
+					</option>
+					
+					<option
+						value="Inglaterra">
+							Inglaterra
+					</option>
+			</select>
+		<br/>	
+		<br/>
+			<input
+				type="color" name="" id="">
+			</input>
+		<br/>
+		<br/>
+			<input
+				type="range" name="" id="">
+			</input>
+		</form>
+	</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,27 @@
+0 Introduccion - que es java script?
+
+java script es un formato de programacion o lenguaje interpretado, compilado.
+
+
+-lenguaje de programacion 
+-interpretado
+-orientado a objetos
+-imperativo
+-case sensitive (upper and lower case)(sensitivo a mayusculas y minusculas)
+-basado en prototipos. /instancias /classless.
+-tipado debil.
+-lenguaje dinamico.
+
+-ECMASCRIPT (5.1 y 6, 7, 8, next)
+
+
+1) Editor de texto
+
+	-personalizar sublime text 3
+		+install package control
+		+set ui
+		color scheme (brogramer)
+		livereload
+		colorhelper
+		colorpickter
+-otras opciones (VSC, Atom)

@@ -1,0 +1,5 @@
+lista de colores por codigo para css
+
+#ccc: gris
+#000:negro
+#fff:blanco

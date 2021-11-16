@@ -1,0 +1,27 @@
+nav {
+
+  align-items: center;
+  justify-content: space-between;
+  position: top;
+  width:100%;
+  top: 0;
+  left:0;
+ 
+}
+
+ #navbar{
+   position:fixed;
+   width: 23%;
+   left: 0; 
+   
+  }
+@media screen and(min-width: 120px){
+  #navbar{
+    left: 0;
+    position:fixed;
+  }
+}
+main {
+  margin-left: 18%;
+  background:orange;
+}
